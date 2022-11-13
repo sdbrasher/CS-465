@@ -13,12 +13,12 @@ const { hasSubscribers } = require('diagnostics_channel');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-// app.engine('hbs', hbs.engine);
+app.set('views', path.join(__dirname, 'app_server/views'));
+//app.engine('hbs', hbs.engine);
 
 
 // register handlebars partials (https://www.npmjs.com/package/hbs)
-hbs.registerPartials(__dirname + '/app_server/views/partials');
+hbs.registerPartials(path.join(__dirname, 'app_server', 'views/partials'));
 
 app.set('view engine', 'hbs');
 
