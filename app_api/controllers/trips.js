@@ -48,7 +48,7 @@ const tripsAddTrip = async(req, res) => {
             code: req.body.code,
             name: req.body.name,
             length: req.body.length,
-            start: req.body.length,
+            start: req.body.start,
             resort: req.body.resort,
             perPerson: req.body.perPerson,
             image: req.body.image,
