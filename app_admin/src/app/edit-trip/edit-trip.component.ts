@@ -31,7 +31,7 @@ export class EditTripComponent implements OnInit {
 
     // initialize form
     this.editForm = this.formBuilder.group({
-      _id: [],
+      _id: [''],
       code: [tripCode, Validators.required],
       name: ['', Validators.required],
       length: ['', Validators.required],
@@ -46,7 +46,7 @@ export class EditTripComponent implements OnInit {
     
     this.tripService.getTrip(tripCode)
       .then(data => {
-        console.log(data);
+        console.log(data[0]);
         // Don't use editForm.setValue() as it will throw console error
         this.editForm.patchValue(data[0]);
       })
