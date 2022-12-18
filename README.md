@@ -3,7 +3,9 @@
 
 ### Architecture
 - Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).
+  - We used Express HTML to create dynamic webpages, used especially in our single page appliaction. Through our Express code, we could update HTML content to reflect changes in data.
 - Why did the backend use a NoSQL MongoDB database?
+  - MongoDB uses JavaScript, specifically JSON key/value pairs. This allows our application to run JavaScript nearly exclusively, cutting down on different systems involved in our application, and therefore cutting the workload of learning/developing/securing yet another technology.
 ### Functionality
 - How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?
   - JSON stands for JavaScript Object Notation, and is used to represent key/value pairs in a format usable by JavaScript. We use JSON objects to communicate between the front and back end, whether through the authentication process or trip retrieval.
